@@ -1,4 +1,4 @@
-* Load Balancers allow distribution of traffic amongst **availability zones only** not across different regions
+Note: Load Balancers allow distribution of traffic amongst **availability zones only** not across different regions
 
 # ALB
 
