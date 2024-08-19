@@ -18,5 +18,6 @@ ALBs can route and balance gRPC traffic. gRPC was created by Google and is an op
 Used to manage a fleet or 3rd party appliances which support the *GENEVE* protocol
 GLB uses the 3rd layer of the OSI model (Network)
 GENEVE:
+- Stands for Generic Network Virtualization Encapsulation
 - flexible tunneling protocol and encapsulates network traffic between endpoints
 - Allows seamless integration between network devices (such as firewalls) and enhances scalability and flexibility
