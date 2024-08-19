@@ -1,3 +1,5 @@
+* Load Balancers allow distribution of traffic amongst **availability zones only** not across different regions
+
 # ALB
 
 * Layer7 only which is HTTP
