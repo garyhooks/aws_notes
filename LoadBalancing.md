@@ -8,12 +8,11 @@ Note: Load Balancers allow distribution of traffic amongst **availability zones 
 * Supports routing by URL, for example mysite.com/orders and mysite.com/products or by subdomain internal.mysite.com
 * Includes port mapping which can help to direct to different ECS
 
-## Use Case
+### Use Case
 Where there are users searching, you can send traffic to one set of EC2s  
 When orders are placed, these can be sent to different EC2s
 
 ALBs can route and balance gRPC traffic. gRPC was created by Google and is an open source frameowrk allowing remote procedural calls.
-
 
 # Gateway Load Balancer
 
@@ -23,3 +22,29 @@ GENEVE:
 - Stands for Generic Network Virtualization Encapsulation
 - flexible tunneling protocol and encapsulates network traffic between endpoints
 - Allows seamless integration between network devices (such as firewalls) and enhances scalability and flexibility
+
+
+# Auto Scaling Group
+
+* These are free, you only pay for the EC2s
+
+**Process**
+1) Set a minimum capacity (e.g. 2)
+2) Set Desired capacity
+3) Set Maximum
+
+**Launch Template** 
+Containes information on what EC2 settings such as:
+* AMI and type
+* User data
+* EBS volumes
+* Security groups
+* SSH keypair
+* IAM roles
+
+
+
+
+
+
+
