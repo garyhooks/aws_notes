@@ -7,7 +7,7 @@
 * Includes port mapping which can help to direct to different ECS
 
 ## Use Case
-Where there are users searching, you can send traffic to one set of EC2s
+Where there are users searching, you can send traffic to one set of EC2s  
 When orders are placed, these can be sent to different EC2s
 
 
