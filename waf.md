@@ -1,6 +1,6 @@
 # AWS WAF
 
-* Remember this is **layer 7** so it would not work for network level filtering
+* Remember this is **Layer 7** so it would not work for network level filtering
 
 * Monitor HTTP(S) requests which are forwarded to either:
     * Amazon API Gateway
