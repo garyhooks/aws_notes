@@ -17,6 +17,7 @@
     * Request length
     * SQL Code (including SQL Injection)
     * Script attacks
+    * Rate-based rules which counts occurrences, useful for DDoS protections
 
 ## Behaviours
 
