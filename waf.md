@@ -1,9 +1,13 @@
 # AWS WAF
 
+* Remember this is **layer 7** so it would not work for network level filtering
+
 * Monitor HTTP(S) requests which are forwarded to either:
     * Amazon API Gateway
     * Amazon CloudFront
     * ALB
+    * AppSync GraphQL API
+    * Cognito User Pool
 
 * Can be configured based on conditions, such as:
     * IP Address
