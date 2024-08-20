@@ -46,3 +46,31 @@ S3 Cross Region Replication:
 
 # AWS Global Accelerator
   
+* Scenario:
+    * Global application but the application is only deployed to India
+    * However, users are based everywhere and so this reduces latency and increases hops
+
+### Unicast IP vs Anycast
+**Unicast**: One server has a specific IP address
+**AnyCast IP**: All servers hold the same IP address, and the client is sent to the nearest one
+    * Users are routed through edge locations through the internal AWS network
+    * Works with:
+        * Elastic IP
+        * EC2 
+        * ALB
+        * NLB
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
