@@ -67,7 +67,22 @@ S3 Cross Region Replication:
 * DDoS protection thanks to AWS Shield
    
 
+# AWS Global Accelerator vs CloudFront
 
+* Both use the AWS global network and edge locations
+* Both integrate with Shield for DDoS protection
+
+* CloudFront:
+    * Improves performance due to caching
+    * Dynamic content
+    * Content served at the edge
+
+* Global Accelerator:
+    * Packets are proxied at the endge to applications inside the AWS network
+    * No caching available
+    * Use cases:
+          * Gaming, IoT, Voip
+          * Anything needing a static IP address
 
 
 
