@@ -16,4 +16,13 @@
     * EC2 instance
     * S3 website (static S3 website)
     * any HTTP backend
- 
+
+# CloudFront vs S3 Cross Region Replication 
+
+Cloudfront:
+* Global Edge network
+* Files are cached for a TTL
+* Great for static content which must be available everywhere
+
+S3 Cross Region Replication
+
