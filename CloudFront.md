@@ -53,12 +53,12 @@ S3 Cross Region Replication:
 ### Unicast IP vs Anycast
 **Unicast**: One server has a specific IP address  
 **AnyCast IP**: All servers hold the same IP address, and the client is sent to the nearest one  
-    * Users are routed through edge locations through the internal AWS network  
-    * Works with:   
-        * Elastic IP
-        * EC2 
-        * ALB
-        * NLB
+* Users are routed through edge locations through the internal AWS network  
+* Works with:   
+    * Elastic IP
+    * EC2 
+    * ALB
+    * NLB
    
 
 
