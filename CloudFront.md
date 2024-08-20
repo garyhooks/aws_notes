@@ -81,8 +81,8 @@ S3 Cross Region Replication:
     * Packets are proxied at the endge to applications inside the AWS network
     * No caching available
     * Use cases:  
-          * Gaming, IoT, Voip
-          * Anything needing a static IP address
+        * Gaming, IoT, Voip
+        * Anything needing a static IP address
 
 
 
