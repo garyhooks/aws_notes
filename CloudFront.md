@@ -24,5 +24,9 @@ Cloudfront:
 * Files are cached for a TTL
 * Great for static content which must be available everywhere
 
-S3 Cross Region Replication
+S3 Cross Region Replication:
+* Must be set up for every region you want replication in
+* Files are updated in NEAR real-time (NO CACHING)
+* Great for dynamic content which changes a lot
+* S3 CRR can be set up to automatically sync contents between different regions using repication rules
 
