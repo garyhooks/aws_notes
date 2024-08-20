@@ -59,6 +59,12 @@ S3 Cross Region Replication:
     * EC2 
     * ALB
     * NLB
+
+### Benefits of Anycast
+* Healthchecks
+* Great for disaster recovery
+* Security as only two external IP addresses need whitelisting
+* DDoS protection thanks to AWS Shield
    
 
 
