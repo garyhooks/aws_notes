@@ -16,6 +16,12 @@
     * EC2 instance (must be public)
     * S3 website (static S3 website)
     * any HTTP backend
+ 
+# Restricting contents based on user
+
+* CloudFront signed URLs - good for access to single files
+* Signed cookies - good for accessing lots of different files and content, such as subscriber areas
+* Require users access content via CloudFront URLs
 
 # CloudFront vs S3 Cross Region Replication 
 
