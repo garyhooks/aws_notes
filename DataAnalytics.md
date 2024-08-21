@@ -5,8 +5,6 @@
 | Quick adhoc searches  | Athena    |
 | Huge integrated, intensive and prolonged searches | Redshift     |
 
-
-
 # Amazon Athena
 
 * Serverless
@@ -69,9 +67,60 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 * BI Tools such as Amazon QuickSight or Tableau Integrate
 * Faster than Athena with queries/joins/aggregations due to having **indexes**
 
+#### Redshift Cluster
+
+* Leader Node: for query planning and results aggregation
+* Computer Node: for performing the queries and sending results to the leader
+
+#### Snapshots and Disaster Recovery
+
+* Multi-AZ for some clusters
+* Snapshots can be used - only what has changed is saved
+* You can restore the snapshot into a new cluster
+* You can take these snapshots
+    * Automated - every 8 hours or every 5gb
+    * Manual
+* You can configure Redshift to copy snapshots to other regions
+
+#### Ingesting Data
+
+1) Amazon Kinesis Data Firehouse - receiving data from different sources. This writes the data to an S3 bucket first, then Firehouse copies it from S3
+2) S3 using COPY command using IAM role
+3) EC2 Instance using JDBC driver
+
+#### Redshift Spectrum
+
+* Query data in S3 without loading it
+* The query is completed by thousands of Redshift Spectrum nodes
+* The bucket you want to query must be in the same region as your cluster 
 
 # QuickSight
 
 * Serverless 
 * Integrates with BI (Business Intelligence)
 * Allows analytics, creation of dashboards and reports
+
+# Amazon OpenSearch Service (Previously named ElasticSearch)
+
+* In DynamoDB you can only query by Primary key or indexes
+* But with OpenSearch, you can search ANY fields, even for partial matches
+* Use OpenSearch to compliment another database
+* Two modes:
+    1) Managed Cluster
+    2) Serverless Cluster - everything including scaling is handled by AWS
+* Does not natively support SQL - but it can be enabled
+* Ingestion is through Kinesis FIrehouse, IoT and Cloudwatch
+* Security using Cognito & IAM, KMS  
+  
+![image](https://github.com/user-attachments/assets/1da093f1-0cd1-4262-9184-59923ef7a8b9)
+
+
+
+
+
+
+
+
+
+
+
