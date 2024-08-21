@@ -3,7 +3,9 @@
 | Use Case    | Option |
 | :-------- | ------- |
 | Quick adhoc searches  | Athena    |
-| Huge integrated, intensive and prolonged searches | Redshift     |
+| Data Warehousing & Huge integrated, intensive and prolonged searches | Redshift     |
+| Big Data | Amazon EMR with Hadoop |
+| Business Intelligence | Amazon QuickSight | 
 
 # Amazon Athena
 
@@ -94,11 +96,18 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 * The query is completed by thousands of Redshift Spectrum nodes
 * The bucket you want to query must be in the same region as your cluster 
 
-# QuickSight
+# Amazon QuickSight
 
-* Serverless 
-* Integrates with BI (Business Intelligence)
+* Serverless
+* Business Intelligence
 * Allows analytics, creation of dashboards and reports
+* SPICE Engine: In-memory computational engine
+    * It only works if you **import data** into QuickSight
+    * Does not work if it is just connected to another database
+* Allows Column-Level Security (CLS) to restrict which columns are shown depending on user
+* Can integrate with 3rd party services like SalesForce and Jira
+* Can integrate with 3rd party databases such as on-presmises
+* Import data sources such as CSV, Excel, JSON etc
 
 # Amazon OpenSearch Service (Previously named ElasticSearch)
 
@@ -115,10 +124,29 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 ![image](https://github.com/user-attachments/assets/1da093f1-0cd1-4262-9184-59923ef7a8b9)
 
 
+# Amazon EMR (Elastic MapReduce)
 
+* Helps create Hadoop Clusters (Big Data) to analyse huge amounts of data
+* Clusters are made of hundreds of EC2 instances
+* EMR comes bundled with Apache Spark, HBase, Presto, Apache Flink
+* EMR takes care of all the setting up and configuration
+* Allows autoscaling and spot instances
+* Use Cases:
+    * Data Processing
+    * Machine Learning
+    * Web Indexing
+    * Big Data
+* Master Node: manages health - long running
+* Core Node: Run tasks and store data - long running
+* Task Node: Just to run tasks - usually Spot
 
+# AWS Glue
 
-
+* ETL Service (Extract, Transform, Load)
+* Moves data between stores
+* Can create jobs to transfer the data and also transform it
+* Automatically conducts schema detection which can automatically map the data
+  
 
 
 
