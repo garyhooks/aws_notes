@@ -48,6 +48,18 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 * Submit a single SQL query to search S3
 * Use machine learning models in SQL queries to look for anomolies and sales prediction analysis
 
+# Redshift
+
+* Database and analytics engine
+* Based on PostgreSQL but it is not used for OLTP (Online Transaction Processing)
+* It's OLAP (Online Analytics Processing)
+* 10x better performance than other data warehouses
+* Columnar storage of data (rather than row based) so it is much quicker
+* Pay only for based on instances provisioned
+* Has an SQL interface
+* BI Tools such as Amazon QuickSight or Tableau Integrate
+* Faster than Athena with queries/joins/aggregations due to having **indexes**
+
 
 # QuickSight
 
