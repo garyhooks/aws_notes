@@ -10,7 +10,7 @@
 * Commonly used with **Amazon QuickSight** to create dashboards
 * This link has a lot of the SQL code needed to analyse S3 access logs: https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-s3-access-logs-to-identify-requests.html
 
-##### Performance Improvements
+#### Performance Improvements
 
 * Use columnar data for cost savings (you only scan the columns you need)
     * Apache Parquet or ORC is best
@@ -24,7 +24,7 @@
 * Partition datasets in S3 for easy quering on virtual columns - then you are not quering ALL data each time, for example:
     * S3://my-s3-bucket/flight/parquet/year=1991/month=1/day=23
 
-##### Ingest Options - Federated Query
+#### Ingest Options - Federated Query
 
 You can scan data anywhere using a Data Source Connector which uses **AWS Lambda** to run **Federated Queries**
 
@@ -39,7 +39,7 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 9) Other cloud services
 10) Amazon S3
 
-##### Use Cases
+#### Use Cases
 
 * Business intelligence
 * VPC Flow Logs
