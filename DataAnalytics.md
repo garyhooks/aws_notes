@@ -1,7 +1,7 @@
 # Summary
 
 | Use Case    | Option |
-| -------- | ------- |
+| :-------- | ------- |
 | Quick adhoc searches  | Athena    |
 | Huge integrated, intensive and prolonged searches | Redshift     |
 
