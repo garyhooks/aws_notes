@@ -142,10 +142,12 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 
 # AWS Glue
 
+* Serverless
 * ETL Service (Extract, Transform, Load)
 * Moves data between stores
 * Can create jobs to transfer the data and also transform it
 * Automatically conducts schema detection which can automatically map the data
+* Example: move S3 into Redshift Data Warehouse
   
 
 
