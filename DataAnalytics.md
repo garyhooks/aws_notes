@@ -6,6 +6,7 @@
 | Data Warehousing & Huge integrated, intensive and prolonged searches | Redshift     |
 | Big Data | Amazon EMR with Hadoop |
 | Business Intelligence | Amazon QuickSight | 
+| Extract, Transform, Load data between stores | Glue |
 
 # Amazon Athena
 
@@ -162,7 +163,16 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 * **Glue Streaming ETL**
     * Compatible with Kinesis data streaming and Kafka
   
+# Data Lake
 
+* Central lake to store all data
+* Fully managed service which can be setup in data
+* Automates many manual steps such as deduplication
+* Combine structured and unstructured data sources
+* Blueprints for lots of different data structures like S3, RDS, NoSQL etc
+* Fine grain access controls at the row and column level
+* It is built on top of AWS Glue
+* 
 
 
 
