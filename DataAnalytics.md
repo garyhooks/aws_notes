@@ -148,6 +148,19 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 * Can create jobs to transfer the data and also transform it
 * Automatically conducts schema detection which can automatically map the data
 * Example: move S3 into Redshift Data Warehouse
+
+* **Glue Job Bookmarks**
+    * Stops you reprocessing old data
+* **Glue Elastic Views**
+    * Combine/replicate across multiple data stores
+    * Leverages a virtual able
+    * Serverless
+* **Glue DataBrew**
+    * Clean and normalize data using pre-built transformation
+* **Glue Studio**
+    * New GUI to run and monitor ETL jobs in Glue
+* **Glue Streaming ETL**
+    * Compatible with Kinesis data streaming and Kafka
   
 
 
