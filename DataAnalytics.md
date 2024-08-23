@@ -172,8 +172,28 @@ You can scan data anywhere using a Data Source Connector which uses **AWS Lambda
 * Blueprints for lots of different data structures like S3, RDS, NoSQL etc
 * Fine grain access controls at the row and column level
 * It is built on top of AWS Glue
+* Security is really good as you can control it in a single place
+
+# Kinesis Data Analytics
+
+* Serverless
+* Pay for what you need
+* Can add reference data from S3
+* **Apache Flink** can also be used
+
+# Apache Managed Streaming for Apache Kafka (Amazon MSK)
+
+* Alternative to Kinesis
+* Both allow you to stream data
+* Each cluster is made of several brokers
+    * Producers send in data
+    * Consumers take the data out 
+* MSK is fully managed Kafka on AWS
+* Create, update and delete clusters
+* It will do everything for you
+* Can deploy across multiple AZ
+
+# Big Data Ingestion Pipeline
+
 * 
-
-
-
 
